@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html >
+<head>
+    <title>Vehicle Dealer</title>
+    <base href="/"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="app/assets/css/style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script src="app/scripts/app.js"></script>
+ 
+
+</head>
+<body ng-app="myApp" ng-controller="appController" ng-view>
+
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-page="/Login">Vehicle Dealer</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between" style="padding-left:80%;">
+                    <button type="submit" class="btn btn-primary rounded submit p-10 px-20">Login</button>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="ftco-section">
+         
+        <div class="container" >
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center mb-5">
+                    <h2 class="heading-section"> {{title}}</h2>
+                </div>
+            </div>
+          
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-5">
+                    <div class="login-wrap p-4 p-md-5">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="fa fa-user-o"></span>
+                        </div>
+                        <h3 class="text-center mb-4">Have an account?</h3>
+                        <form action="#" class="login-form">
+                            <div class="form-group">
+                                <input type="text" class="form-control rounded-left" placeholder="Username" required id="userName">
+                            </div>
+                            <div class="form-group d-flex">
+                                <input type="password" class="form-control rounded-left" placeholder="Password" required id="password">
+                            </div>
+                            <div class="form-group d-md-flex">
+                                <div class="w-100 text-md-center">
+                                    <a href="#!otp">Login Via OTP</a>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input class="btn btn-primary rounded submit p-3 px-5" type=button ng-click="login()" 
+                                       value='Login'>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+    <!--Home Component-->
+    <script src="app/scripts/controllers/home.controller.js"></script>
+    <!--Login Component-->
+    <script src="app/scripts/controllers/login.controller.js"></script>
+    <script src="app/scripts/services/login.service.js"></script>
+    <!--User Component-->
+    <script src="app/scripts/controllers/user.controller.js"></script>
+    <script src="app/scripts/services/user.service.js"></script>
+    <!--Customer Component-->
+    <script src="app/scripts/controllers/customer.controller.js"></script>
+    <script src="app/scripts/services/customer.service.js"></script>
+
+    <script src="app/assets/js/Login/Login.js"></script>
+    <script src="app/assets/js/jquery.min.js"></script>
+    <script src="app/assets/js/main.js"></script>
+    <script src="app/assets/js/popper.js"></script>
+    <script src="app/assets/js/site.js"></script>
+    <script src="app/assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+</body>
+</html>

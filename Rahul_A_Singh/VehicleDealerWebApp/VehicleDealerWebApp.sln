@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "AngularJs", "AngularJs\", "{9820FFC6-928D-43BF-99D9-44D3A0F38112}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_51721"
+		Debug.AspNetCompiler.PhysicalPath = "AngularJs\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51721\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_51721"
+		Release.AspNetCompiler.PhysicalPath = "AngularJs\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51721\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "51721"
+		SlnRelativePath = "AngularJs\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9820FFC6-928D-43BF-99D9-44D3A0F38112}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9820FFC6-928D-43BF-99D9-44D3A0F38112}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ECACF2E6-1BFD-4A1B-95DA-65D12B6CEEE6}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "angular": "^1.8.3",
+    "jasmine": "^4.1.0",
+    "karma": "^6.3.19",
+    "karma-chrome-launcher": "^3.1.1",
+    "karma-cli": "^2.0.0"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.8.3",
+    "jasmine-core": "^4.1.0",
+    "karma-jasmine": "^5.0.0",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-requirejs": "file:node_modules/karma-requirejs"
+  }
+}

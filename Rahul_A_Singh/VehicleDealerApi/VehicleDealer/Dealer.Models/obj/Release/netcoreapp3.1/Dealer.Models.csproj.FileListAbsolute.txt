@@ -1,0 +1,10 @@
+C:\Users\rahula.singh\source\repos\VehicleDealer\Dealer.Models\bin\Release\netcoreapp3.1\Dealer.Models.deps.json
+C:\Users\rahula.singh\source\repos\VehicleDealer\Dealer.Models\bin\Release\netcoreapp3.1\Dealer.Models.dll
+C:\Users\rahula.singh\source\repos\VehicleDealer\Dealer.Models\bin\Release\netcoreapp3.1\Dealer.Models.pdb
+C:\Users\rahula.singh\source\repos\VehicleDealer\Dealer.Models\obj\Release\netcoreapp3.1\Dealer.Models.csproj.AssemblyReference.cache
+C:\Users\rahula.singh\source\repos\VehicleDealer\Dealer.Models\obj\Release\netcoreapp3.1\Dealer.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rahula.singh\source\repos\VehicleDealer\Dealer.Models\obj\Release\netcoreapp3.1\Dealer.Models.AssemblyInfoInputs.cache
+C:\Users\rahula.singh\source\repos\VehicleDealer\Dealer.Models\obj\Release\netcoreapp3.1\Dealer.Models.AssemblyInfo.cs
+C:\Users\rahula.singh\source\repos\VehicleDealer\Dealer.Models\obj\Release\netcoreapp3.1\Dealer.Models.csproj.CoreCompileInputs.cache
+C:\Users\rahula.singh\source\repos\VehicleDealer\Dealer.Models\obj\Release\netcoreapp3.1\Dealer.Models.dll
+C:\Users\rahula.singh\source\repos\VehicleDealer\Dealer.Models\obj\Release\netcoreapp3.1\Dealer.Models.pdb

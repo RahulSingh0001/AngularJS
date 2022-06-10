@@ -1,0 +1,93 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>Login 08</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="app/assets/css/style.css" rel="stylesheet" />
+    <!--<link rel="stylesheet" href="../assets/css/style.css">-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/angularjs-toaster/3.0.0/toaster.min.css" rel="stylesheet" />
+
+</head>
+<body ng-cloak>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-page="/Login">ECommerce</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between" style="padding-left:80%;">
+                    <a class="btn btn-primary rounded submit p-10 px-20" href="#!login">Login</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center mb-5">
+                    <h2 class="heading-section">Welcome</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-5">
+                    <div class="login-wrap p-4 p-md-5">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="fa fa-user-o"></span>
+                        </div>
+                        <h3 class="text-center mb-4">Verify OTP</h3>
+                        <form action="#" class="login-form">
+                            <div class="form-group">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <div class="form-group d-md-flex">
+                                                <div class="w-10 text-center">
+                                                    <h3 class="text-center mb-1" style="font-size:18px">Enter OTP</h3>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-group" style="width:100%;padding-left:10px ">
+                                                <input type="text" maxlength='6' oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');" class="form-control rounded-left" placeholder="OTP" required id="otpData" />
+
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </div>
+                            <div class="form-group ">
+                                <div class="w-100" style="padding-left:80px">
+                                    <a href="#!login">Login with User Name</a>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input class="btn btn-primary rounded submit p-3 px-5" type=button ng-click="VerifyOTP(this.value)"
+                                       value='Verify'>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="app/assets/js/Login/Login.js"></script>
+
+    <script src="app/assets/js/jquery.min.js"></script>
+    <script src="app/assets/js/popper.js"></script>
+    <script src="app/assets/js/bootstrap.min.js"></script>
+    <script src="app/assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
+
+
+</body>
+</html>

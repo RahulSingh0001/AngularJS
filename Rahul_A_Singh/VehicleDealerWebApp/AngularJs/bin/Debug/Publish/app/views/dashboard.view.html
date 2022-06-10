@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+
+<html >
+<head>
+    <meta charset="UTF-8">
+
+    <link href="app/assets/css/HomePage.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <script src="app/scripts/vendor/angular.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/angularjs-toaster/3.0.0/toaster.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body ng-app="myApp" ng-controller="appController" ng-view ng-cloak>
+    <div class="sidebar">
+        <div class="logo-details">
+            <i class='bx bx-bus'></i>
+            <span class="logo_name">VehicleDealer</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="" class="active">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+            </li>                 
+            <li class="log_out">
+                <a href="#!login">
+                    <i class='bx bx-log-out'></i>
+                    <span class="links_name">Log out</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section">
+        <nav>
+            <div class="sidebar-button">
+                <i class='bx bx-menu sidebarBtn'></i>
+                <span class="dashboard">Dashboard</span>
+            </div>           
+            <div class="profile-details">
+                <span class="admin_name" id="user">{{Name}}</span>
+            </div>
+        </nav>
+
+        <div class="home-content">        
+            <div class="sales-boxes">
+                <div class="recent-sales box">
+                    <div class="title">Dealer:- {{dealerName}}</div>
+                    <div class="sales-details">
+                        <ul class="details" style="align-items:center">
+                            <li class="topic">Vehicles Name</li>
+                            <li ng-repeat="x in carList" ng-model="x">{{x.carName}}</li>                          
+                        </ul>
+                        <ul class="details">
+                            <li class="topic">Stock In Showroom</li>
+                            <li ng-repeat="x in carList" ng-model="x">
+                                {{x.carInShowroom}}
+                                <span class="label label-danger" ng-if="x.carInShowroom==0">Out of Stock</span>
+                                <span class="label label-success" ng-if="x.carInShowroom>3">In Stock </span>
+                                <span class="label label-warning" ng-if="x.carInShowroom<3&&x.carInShowroom>0">Less in Stock</span>
+                            </li>
+                            
+                        </ul>
+                        <ul class="details">
+                            <li class="topic">Age in Showroom</li>
+                            <li ng-repeat="x in carList" ng-model="x">{{x.carAge}} months</li>                        
+                        </ul>                     
+                    </div>
+                    <div class="button">
+                        <a href="#!dealer">Change Dealer or Location</a>
+                    </div>
+                </div>
+                <div class="top-sales box">
+                    <div class="title">Other Details</div>
+                    <div class="sales-details">
+                        <ul class="details">
+                            <li class="topic">Test Drive <i class='bx bxs-car carts'></i></li>
+                            <li ng-repeat="x in carList" ng-model="x">{{x.carInDemo}} available</li>
+                        </ul>
+                        <ul class="details">
+                            
+                            <li class="topic">In Demonstration <i class='bx bx-buildings carts'></i></li>
+                            <li ng-repeat="x in carList" ng-model="x">{{x.carTestDrive}} available</li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+        </div>   
+    </section>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
+    <script>
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".sidebarBtn");
+        sidebarBtn.onclick = function () {
+            sidebar.classList.toggle("active");
+            if (sidebar.classList.contains("active")) {
+                sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+            }
+            else
+                sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+        }
+        
+    </script>
+
+
+</body>
+</html>
+
+
+

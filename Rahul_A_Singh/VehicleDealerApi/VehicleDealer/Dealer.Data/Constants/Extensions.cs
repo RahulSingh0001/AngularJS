@@ -55,7 +55,7 @@ namespace Dealer.Data.Constants
         }
         public static decimal NullIsZero(this decimal value)
         {
-            return value == null ? 0 : value;
+            return value.Equals(null) ? 0 : value;
         }
 
         public static bool IsNullOrBlank(this string text)
